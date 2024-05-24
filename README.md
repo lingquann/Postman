@@ -2,7 +2,7 @@ Postman
 
 # Báo cáo Kiểm thử API Địa Chỉ (Addresses)
 
-Mục tiêu Kiểm thử:
+# Mục tiêu Kiểm thử:
 
 Xác minh chức năng CRUD (Create, Read, Update, Delete) của API địa chỉ hoạt động đúng theo tài liệu.
 
@@ -12,7 +12,7 @@ Kiểm tra xử lý các trường hợp lỗi như dữ liệu đầu vào khô
 
 
 
-Phạm vi Kiểm thử:
+# Phạm vi Kiểm thử:
 
 Kiểm thử chức năng: Thực hiện các ca kiểm thử cho các endpoint CRUD.
 
@@ -23,7 +23,7 @@ Kiểm thử xử lý lỗi: Kiểm tra các mã lỗi HTTP và thông báo lỗ
 Lưu ý: Kiểm thử hiệu suất chưa được thực hiện trong báo cáo này.
 
 
-Tài liệu API (Giả sử):
+# Tài liệu API (Giả sử):
 
 Các chức năng chính của API bao gồm:
 
@@ -38,21 +38,21 @@ PUT /api/v2/addresses/{id}: Cập nhật thông tin của một địa chỉ.
 DELETE /api/v2/addresses/{id}: Xóa một địa chỉ.
 
 
-Kiểm thử chức năng:
+# Kiểm thử chức năng:
 
 Thực hiện các ca kiểm thử để xác minh tính năng CRUD hoạt động đúng với tài liệu.
 
 Kiểm tra xem dữ liệu được trả về có đầy đủ các thuộc tính theo tài liệu (ví dụ: id, city, street_address, v.v.).
 
 
-Kiểm thử dữ liệu đầu vào:
+# Kiểm thử dữ liệu đầu vào:
 
 Thực hiện các ca kiểm thử với dữ liệu đầu vào hợp lệ và không hợp lệ.
 
 Kiểm tra xem API có xử lý đúng các trường hợp dữ liệu đầu vào không hợp lệ, trả về mã lỗi 400 Bad Request và thông báo lỗi rõ ràng.
 
 
-Ví dụ:
+# Ví dụ:
 
 Tạo một địa chỉ mới (POST /api/v2/addresses) với dữ liệu thiếu thông tin bắt buộc (ví dụ: thiếu city):
 
@@ -61,7 +61,7 @@ Yêu cầu POST thất bại với mã lỗi 400 Bad Request.
 Thông báo lỗi mô tả trường dữ liệu đầu vào bị thiếu.
 
 
-Kiểm thử xử lý lỗi:
+# Kiểm thử xử lý lỗi:
 
 (Cần thực hiện kiểm thử và điền thông tin kết quả)
 
@@ -76,21 +76,14 @@ Cập nhật/xóa địa chỉ không tồn tại (PUT /api/v2/addresses/{id}, D
 Kiểm tra xem thông báo lỗi có cung cấp thông tin chi tiết để người dùng có thể xác định và giải quyết vấn đề.
 
 
-Ví dụ:
+# Ví dụ:
 
 Lấy thông tin của một địa chỉ không tồn tại (GET /api/v2/addresses/{id}):
 
 Phản hồi trả về mã lỗi 404 Not Found và thông báo lỗi cho biết địa chỉ với ID được chỉ định không tồn tại.
 
 
-Lưu ý:
-
-Báo cáo này là mẫu và cần được cập nhật với kết quả kiểm thử thực tế cho API địa chỉ.
-
-Cần thực hiện kiểm thử hiệu suất để đánh giá thời gian phản hồi và khả năng xử lý của API.
-
-
-Ví dụ về dữ liệu địa chỉ (chỉ để tham khảo):
+# Ví dụ về dữ liệu địa chỉ (chỉ để tham khảo):
 
 JSON
 
