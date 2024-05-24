@@ -23,7 +23,7 @@ Kiểm thử xử lý lỗi: Kiểm tra các mã lỗi HTTP và thông báo lỗ
 Lưu ý: Kiểm thử hiệu suất chưa được thực hiện trong báo cáo này.
 
 
-# Tài liệu API (Giả sử):
+# Tài liệu API:
 
 Các chức năng chính của API bao gồm:
 
@@ -83,7 +83,7 @@ Lấy thông tin của một địa chỉ không tồn tại (GET /api/v2/addres
 Phản hồi trả về mã lỗi 404 Not Found và thông báo lỗi cho biết địa chỉ với ID được chỉ định không tồn tại.
 
 
-# Ví dụ về dữ liệu địa chỉ (chỉ để tham khảo):
+# Ví dụ về dữ liệu địa chỉ:
 
 JSON
 
